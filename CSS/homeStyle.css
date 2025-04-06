@@ -1,3 +1,4 @@
+/*TOPNAV*/
 .topnav {
     background-color: rgba(0, 0, 0, 0.85);
     overflow: hidden;
@@ -24,6 +25,7 @@
     color: #fff;
 }
 
+/*SEARCH BAR*/
 .search-container {
     float: right;
 }
@@ -36,6 +38,7 @@ button {
     border: none;
 }
 
+/*PAGE*/
 .page-body {
     width: 100%;
     height: 86vh;
@@ -47,17 +50,19 @@ button {
     background-color: #000;
 }
 
+/*BACKGROUND*/
 #wireframedesktop {
     position: relative;
     width: 100%;
     height: 99%;
     overflow: hidden;
-    background-image: url('../Assets/WireframeDesktop.png');
+    background-image: url('/Assets/WireframeDesktop.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+/*CONTENT*/
 #content {
     position: absolute;
     top: 32%;
@@ -90,7 +95,7 @@ button {
     line-height: 1.6;
     color: aliceblue;
 }
-
+/*FOOTER*/
 footer {
     text-align: center;
     padding: 1rem 0;
