@@ -1,0 +1,102 @@
+.topnav {
+    background-color: rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+    text-align: left;
+}
+
+.topnav a {
+    text-decoration: none;
+    text-align: center;
+    background-color: #282c2b;
+    padding: 1em 3em;
+    display: inline-block;
+    color: aliceblue;
+    font-size: 17px;
+    margin-left: -4px;
+}
+
+.topnav a:hover {
+    background-color: #838383;
+}
+
+.topnav a.active {
+    background-color: #838383;
+    color: #fff;
+}
+
+.search-container {
+    float: right;
+}
+
+input[type=text],
+button {
+    padding: 6px;
+    margin: 10px 34px 0px -38px;
+    font-size: 17px;
+    border: none;
+}
+
+.page-body {
+    width: 100%;
+    height: 86vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+#wireframedesktop {
+    position: relative;
+    width: 100%;
+    height: 99%;
+    overflow: hidden;
+    background-image: url('../Assets/WireframeDesktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#content {
+    position: absolute;
+    top: 32%;
+    left: 47%;
+    transform: translate(-8%, -29%);
+    background-color: rgba(0,0,0,0.6);
+    columns: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    max-width: 600px;
+}
+
+#content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: azure;
+}
+
+#content h4 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+#content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: aliceblue;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #ccc;
+    background-color: rgba(0,0,0,0.85);
+    font-size: 0.9rem;
+
+}
+

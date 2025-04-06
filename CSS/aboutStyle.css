@@ -1,0 +1,133 @@
+/*TOPNAV*/
+.topnav {
+    background-color: rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+    text-align: left;
+}
+
+.topnav a {
+    text-decoration: none;
+    text-align: center;
+    background-color: #282c2b;
+    padding: 1em 3em;
+    display: inline-block;
+    color: aliceblue;
+    font-size: 17px;
+    margin-left: -4px;;
+}
+
+.topnav a:hover {
+    background-color: #838383;
+}
+
+.topnav a.active {
+    background-color: #838383;
+    color: #fff;
+}
+
+/*SEARCH BAR*/
+.search-container {
+    float: right;
+}
+
+input[type=text],
+button {
+    padding: 6px;
+    margin: 10px 34px 0px -38px;
+    font-size: 17px;
+    border: none;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #ccc;
+    background-color: rgba(0,0,0,0.85);
+    font-size: 0.9rem;
+
+}
+
+img {
+    height: max-content;
+    width: 100%;
+}
+
+#frame {
+    margin: 0 auto;
+    height: 84vh;
+    max-width: 100%;
+}
+
+#slides {
+    padding: -7px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slides .inner {
+	transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	width: 400%;
+	line-height: 0;
+	height: 668px;
+}
+
+#slides .frame {
+	width: 25%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 110%;
+	color: black;
+}
+
+#frame label {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#frame1:checked~#slides .inner {
+	margin-left: 0;
+}
+
+#frame2:checked~#slides .inner {
+	margin-left: -100%;
+}
+
+#frame3:checked~#slides .inner {
+	margin-left: -200%
+}
+
+#frame input[type=radio] {
+	display: none;
+}
+
+#bullets {
+	top: 46em;
+	z-index: 100;
+	position: absolute;
+	left: 50%;
+    transform: translateX(-50%);
+}
+
+#bullets label {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	background: #ccc;
+	margin: 0 10px;
+}
+
+#frame1:checked~#bullets label:nth-child(1),
+#frame2:checked~#bullets label:nth-child(2),
+#frame3:checked~#bullets label:nth-child(3) {
+	background: #444;
+}
